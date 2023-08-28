@@ -1,5 +1,14 @@
 @import url('./utils/variables.css');
 @import url('./utils/reset.css');
+@import url('./base/cammon.css');
 @import url('./base/container.css');
 @import url('layout/header.css');
+@import url('layout/hero.css');
+@import url('layout/about.css');
+@import url('layout/lessons.css');
+@import url('layout/package.css');
+@import url('layout/teacher.css');
+@import url('layout/form.css');
+@import url('layout/feedback.css');
 @import url('layout/footer.css');
+@import url('layout/menu.css');
