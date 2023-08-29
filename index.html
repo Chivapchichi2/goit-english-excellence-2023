@@ -12,7 +12,7 @@
           integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/goit-english-excellence-2023/assets/index-3494fa9b.js"></script>
+    <script type="module" crossorigin src="/goit-english-excellence-2023/assets/index-addea78d.js"></script>
     <link rel="stylesheet" href="/goit-english-excellence-2023/assets/index-75a367d4.css">
   </head>
   <body>
@@ -40,7 +40,13 @@
         </li>
       </ul>
     </nav>
-    <button class="burger-btn js-open-menu" type="button">
+    <button
+      class="burger-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-modal-open
+    >
       <svg class="mobile-menu-btn-icon" width="32" height="23">
         <use href="../img/sprite.svg#icon-burger"></use>
       </svg>
@@ -208,9 +214,13 @@
     <footer>
   <h2>Footer</h2>
 </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
   <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <button class="mobile-menu-close-btn js-close-menu" type="button">
+    <button
+      class="mobile-menu-close-btn js-close-menu"
+      type="button"
+      data-modal-close
+    >
       <svg class="close-btn-icon" width="16" height="16">
         <use href="../img/sprite.svg#icon-x"></use>
       </svg>
