@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=https://github.com/Chivapchichi2/goit-english-excellence-2023",
+    "build": "vite build --base=/goit-english-excellence-2023/",
     "preview": "vite preview"
   },
   "devDependencies": {
