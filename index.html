@@ -12,12 +12,68 @@
           integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="https://github.com/Chivapchichi2/goit-english-excellence-2023/assets/index-2640bede.js"></script>
-    <link rel="stylesheet" href="https://github.com/Chivapchichi2/goit-english-excellence-2023/assets/index-71e73a5a.css">
+    <script type="module" crossorigin src="https://github.com/Chivapchichi2/goit-english-excellence-2023/assets/index-3494fa9b.js"></script>
+    <link rel="stylesheet" href="https://github.com/Chivapchichi2/goit-english-excellence-2023/assets/index-75a367d4.css">
   </head>
   <body>
-    <header class="header">
-  <h2>Header</h2>
+    <header>
+  <div class="container header-container">
+    <nav class="page-navigation">
+      <a href="./index.html" class="logo-link"
+        >english<span class="logo-link-color">excellence</span>.</a
+      >
+      <ul class="page-nav-list list">
+        <li class="page-nav-list-item">
+          <a href="#about" class="page-nav-list-link link">About us</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#lessons" class="page-nav-list-link link">Our lessons</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#teachers" class="page-nav-list-link link">Teachers</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#reviews" class="page-nav-list-link link">Reviews</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#contacts" class="page-nav-list-link link">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger-btn js-open-menu" type="button">
+      <svg class="mobile-menu-btn-icon" width="32" height="23">
+        <use href="../img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <div class="page-header-socials">
+      <ul class="page-header-socials-list list">
+        <li class="page-header-socials-list-items">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="page-header-socials-link link"
+            ><svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="../img/sprite.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="page-header-socials-list-items">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="page-header-socials-link link"
+            ><svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="../img/sprite.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="page-header-socials-list-items">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="page-header-socials-link link"
+            ><svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="../img/sprite.svg#icon-youtube"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 
     <main>
@@ -152,13 +208,69 @@
     <footer>
   <h2>Footer</h2>
 </footer>
-    <div>
-  <ul>
-    <li><a href='index.php'>Home</a></li>
-    <li><a href='index.php?page=about'>About</a></li>
-    <li><a href='index.php?page=contact'>Contact</a></li>
-  </ul>
+    <div class="backdrop is-hidden">
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button class="mobile-menu-close-btn js-close-menu" type="button">
+      <svg class="close-btn-icon" width="16" height="16">
+        <use href="../img/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-nav-list-item">
+          <a class="mobile-menu-nav-list-link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu-nav-list-item">
+          <a class="mobile-menu-nav-list-link" href="#lessons">Our lessons</a>
+        </li>
+        <li class="mobile-menu-nav-list-item">
+          <a class="mobile-menu-nav-list-link" href="#teachers">Teachers</a>
+        </li>
+        <li class="mobile-menu-nav-list-item">
+          <a class="mobile-menu-nav-list-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="mobile-menu-nav-list-item">
+          <a class="mobile-menu-nav-list-link" href="#contacts">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-socials">
+      <ul class="mobile-menu-socials-list list">
+        <li class="mobile-menu-social-list-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="mobile-menu-social-link"
+          >
+            <svg class="mobile-menu-social-list-icon" width="26" height="26">
+              <use href="../img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="mobile-menu-social-link"
+          >
+            <svg class="mobile-menu-social-list-icon" width="26" height="26">
+              <use href="../img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="mobile-menu-social-link link"
+          >
+            <svg class="mobile-menu-social-list-icon" width="26" height="26">
+              <use href="../img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+
     
   </body>
 </html>
