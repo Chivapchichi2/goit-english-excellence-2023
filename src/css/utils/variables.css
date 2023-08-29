@@ -1,10 +1,11 @@
 :root {
-  --main-text: rgba(18, 20, 23, 0.50);
+  --main-text: rgba(18, 20, 23, 0.5);
   --black: #121417;
-  --green: #4DC274;
-  --green-linear: linear-gradient(80deg, #4DC274 0%, #BEE8CC 100%);
-  --light-green: #D4FDE1;
-  --dark-green: #38AE5F;
-  --gray: #F3F5F6;
+  --green: #4dc274;
+  --green-linear: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --light-green: #d4fde1;
+  --dark-green: #38ae5f;
+  --gray: #f3f5f6;
   --white: #ffffff;
+  --transparent-green: #bee8cc;
 }
