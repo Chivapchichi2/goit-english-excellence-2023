@@ -8,4 +8,5 @@
   --gray: #f3f5f6;
   --white: #ffffff;
   --transparent-green: #bee8cc;
+  --common-transition: 250ms linear;
 }
