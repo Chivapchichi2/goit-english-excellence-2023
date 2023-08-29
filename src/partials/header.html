@@ -22,7 +22,13 @@
         </li>
       </ul>
     </nav>
-    <button class="burger-btn js-open-menu" type="button">
+    <button
+      class="burger-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-modal-open
+    >
       <svg class="mobile-menu-btn-icon" width="32" height="23">
         <use href="../img/sprite.svg#icon-burger"></use>
       </svg>
