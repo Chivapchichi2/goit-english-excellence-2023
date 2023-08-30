@@ -223,6 +223,11 @@
     line-height: 1.5;
   }
 
+  .appointment-form-input:not(:placeholder-shown):invalid
+    + .appointment-form-input-icon {
+    transform: scale(100%) translateY(70%);
+  }
+
   .appointment-form-text-radiogroup {
     font-size: 20px;
     line-height: 1.2;
@@ -254,7 +259,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .appointment-wrap {
     display: flex;
   }
