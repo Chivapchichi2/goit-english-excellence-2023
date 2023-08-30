@@ -99,6 +99,8 @@
     justify-content: center;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 10px;
+    transition: fill var(--common-transition),
+      border-color var(--common-transition);
   }
   .page-header-socials-list-items:hover
     .page-header-socials-link
