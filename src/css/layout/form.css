@@ -2,20 +2,15 @@
   display: none;
 }
 
-.appointment-wrap {
-  padding-bottom: 80px;
-}
-
 .appointment-title {
   font-weight: 600;
-  line-height: 1.12;
+  line-height: 1.1;
   margin-bottom: 14px;
 }
 
 .appointment-text-description {
   color: rgba(18, 20, 23, 0.8);
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: normal;
   margin-bottom: 20px;
 }
@@ -39,8 +34,7 @@
 .appointment-form-input,
 .appointment-form-textarea {
   color: var(--black);
-  font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.3;
   padding: 15px 42px 15px 18px;
   width: 100%;
   border-radius: 12px;
@@ -54,8 +48,7 @@
 .appointment-form-input::placeholder,
 .appointment-form-textarea::placeholder {
   color: var(--black);
-  font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.3;
 }
 
 .appointment-form-input:not(:placeholder-shown):valid {
@@ -83,7 +76,7 @@
   color: var(--black);
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.33;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   margin-bottom: 14px;
 }
@@ -103,8 +96,7 @@
 
 .appointment-form-radio-text {
   color: var(--black);
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: -0.02em;
 }
 
@@ -158,9 +150,8 @@
   justify-content: center;
   border-radius: 12px;
   background: var(--green);
-  font-size: 14px;
   font-weight: 700;
-  line-height: 1.71;
+  line-height: 1.7;
   letter-spacing: normal;
   color: var(--white);
   width: 100%;
@@ -178,7 +169,7 @@
 .appointment-form-text-policy {
   color: var(--main-text);
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.3;
   letter-spacing: normal;
 }
 
@@ -215,7 +206,7 @@
     color: var(--main-text);
     text-align: center;
     font-size: 18px;
-    line-height: 1.66;
+    line-height: 1.7;
     letter-spacing: normal;
     margin: 0 auto 64px auto;
     max-width: 586px;
@@ -247,18 +238,18 @@
 
   .appointment-form-radio-text {
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.3;
   }
 
   .appointment-form-btn {
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.6;
   }
 
   .appointment-form-text-policy {
     color: var(--main-text);
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.7;
     letter-spacing: normal;
   }
 }
