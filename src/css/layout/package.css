@@ -21,7 +21,7 @@
     color: var(--white);
     font-size: 38px;
     font-weight: 700;
-    line-height: 1.05;
+    line-height: 1.1;
     margin-bottom: 40px;
     padding-left: 20px;
   }
@@ -30,7 +30,7 @@
     color: var(--transparent-green);
     font-size: 38px;
     font-weight: 700;
-    line-height: 1.05;
+    line-height: 1.1;
   }
 
   .package-benefits-container {
@@ -62,7 +62,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
   }
 
   .package-benefits-text {
@@ -70,7 +70,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.42;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
   }
 
   .package-benefits-list {
@@ -91,7 +91,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2; /* 120% */
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
     margin-bottom: 20px;
   }
 
@@ -196,7 +196,7 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.02em;
     margin-bottom: 32px;
   }
 
@@ -205,7 +205,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
   }
 
   .package-benefits-link {
@@ -313,7 +313,7 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.02em;
     margin-bottom: 32px;
   }
 
@@ -322,7 +322,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
   }
 
   .package-benefits-link {
