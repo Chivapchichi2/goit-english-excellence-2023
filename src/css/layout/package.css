@@ -1,0 +1,121 @@
+@media screen and (max-width: 767px) {
+  .package-container {
+    padding-top: 40px;
+    border-radius: 16px;
+    background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  }
+
+  .package-slogan {
+    color: var(--white);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 40px;
+  }
+
+  .package-slogan-accent {
+    color: var(--transparent-green);
+    font-family: Manrope;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+
+  .package-benefits-container {
+    background-image: url(../../img/cards-mobile-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 496px;
+    padding: 40px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .package-benefits-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .package-benefits-icon {
+    fill: var(--white);
+  }
+
+  .package-benefits-title {
+    color: var(--black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+
+  .package-benefits-text {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.42;
+    letter-spacing: -0.28px;
+  }
+
+  .package-benefits-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .package-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  .package-benefits-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+  }
+
+  .package-benefits-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 58px;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.71;
+  }
+
+  .package-benefits-link:hover,
+  .package-benefits-link:focus {
+    background-color: var(--dark-green);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi),
+  (max-width: 767px) and (min-resolution: 2dppx),
+  (max-width: 767px) and (min-device-pixel-ratio: 2) {
+  .package-benefits-container {
+    background-image: url(../../img/cards-mobile-2x-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
