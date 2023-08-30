@@ -1,0 +1,49 @@
+.hero-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hero-container {
+  display: block;
+  background-image: linear-gradient(
+      57deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../../img/hero/hero-mob-bckgrd.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding-top: 425px;
+  padding-bottom: 72px;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('../../img/hero/hero-mob-bckgrd2@x.png');
+  }
+}
+
+.hero-title {
+  display: block;
+  padding-bottom: 40px;
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: calc(40 / 38);
+}
+.title-highlight {
+  color: var(--transparent-green);
+}
+
+.hero-btn {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 12px;
+  border: none;
+  padding: 14px 78px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(24 / 14);
+  margin-bottom: 72px;
+}
