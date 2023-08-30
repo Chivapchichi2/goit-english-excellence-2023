@@ -3,7 +3,8 @@
   padding-right: 20px;
 }
 .hero-container {
-  display: block;
+  position: relative;
+  background-color: lightgray;
   background-image: linear-gradient(
       57deg,
       rgba(0, 0, 0, 0.4) 0%,
@@ -14,29 +15,36 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
-  padding-top: 425px;
-  padding-bottom: 72px;
+  padding-bottom: 1px;
 }
 
 @media (min-resolution: 192dpi) {
   .hero-container {
-    background-image: url('../../img/hero/hero-mob-bckgrd2@x.png');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../../img/hero/hero-mob-bckgrd2@x.png');
   }
 }
 
 .hero-title {
-  display: block;
+  padding-top: 425px;
   padding-bottom: 40px;
   color: var(--white);
   font-size: 38px;
   font-weight: 700;
   line-height: calc(40 / 38);
+  letter-spacing: 0;
 }
 .title-highlight {
   color: var(--transparent-green);
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   background-color: var(--green);
   color: var(--white);
   border-radius: 12px;
@@ -46,4 +54,39 @@
   font-weight: 700;
   line-height: calc(24 / 14);
   margin-bottom: 72px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--dark-green);
+}
+
+.down-anchor {
+  display: flex;
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.down-anchor-icon {
+  fill: var(--green);
+}
+
+.down-anchor:hover,
+.down-anchor:focus {
+  background-color: var(--green);
+}
+
+.down-anchor:hover .down-anchor-icon {
+  fill: var(--white);
+}
+
+.down-anchor:focus .down-anchor-icon {
+  fill: var(--white);
 }
