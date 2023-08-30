@@ -21,8 +21,9 @@
 @media (min-resolution: 192dpi) {
   .hero-container {
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
       ),
       url('../../img/hero/hero-mob-bckgrd2@x.png');
   }
