@@ -1,0 +1,302 @@
+.appointment-advantages {
+  display: none;
+}
+
+.appointment-title {
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.appointment-text-description {
+  color: rgba(18, 20, 23, 0.8);
+  line-height: 1.7;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.appointment-form-label {
+  display: block;
+  position: relative;
+}
+
+.appointment-form-input-icon {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  transform: scale(0%) translateY(50%);
+  fill: #ee323d;
+  opacity: 0;
+  transition: transform var(--common-transition),
+    opacity var(--common-transition);
+}
+
+.appointment-form-input,
+.appointment-form-textarea {
+  color: var(--black);
+  line-height: 1.3;
+  padding: 15px 42px 15px 18px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  margin-bottom: 18px;
+  outline-offset: -4px;
+  outline-color: transparent;
+  transition: border var(--common-transition);
+}
+
+.appointment-form-input::placeholder,
+.appointment-form-textarea::placeholder {
+  color: var(--black);
+  line-height: 1.3;
+}
+
+.appointment-form-input:not(:placeholder-shown):valid {
+  border: 1px solid var(--green);
+}
+
+.appointment-form-input:not(:placeholder-shown):invalid {
+  border: 1px solid #ee323d;
+}
+
+.appointment-form-input:not(:placeholder-shown):invalid
+  + .appointment-form-input-icon {
+  opacity: 1;
+  transform: scale(100%) translateY(50%);
+}
+
+.appointment-form-textarea {
+  height: 92px;
+  padding: 15px 17px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.appointment-form-text-radiogroup {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.appointment-form-radio-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.appointment-form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.appointment-form-radio-text {
+  color: var(--black);
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+}
+
+.appointment-form-radio-custom {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+}
+
+.appointment-form-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.appointment-form-radio:checked + .appointment-form-radio-custom {
+  border: 2px solid var(--green);
+}
+
+.appointment-form-radio:focus + .appointment-form-radio-custom {
+  outline: auto;
+  outline-offset: 2px;
+  outline-color: transparent;
+}
+
+.appointment-form-radio:checked + .appointment-form-radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(20%, 20%);
+}
+
+.appointment-form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--green);
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: normal;
+  color: var(--white);
+  width: 100%;
+  height: 52px;
+  border: none;
+  margin-bottom: 16px;
+  transition: background-color var(--common-transition);
+}
+
+.appointment-form-btn:hover,
+.appointment-form-btn:focus {
+  background-color: var(--dark-green);
+}
+
+.appointment-form-text-policy {
+  color: var(--main-text);
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 375px) {
+  .appointment-title {
+    font-size: max(calc(30px + 2 * (100vw - 320px) / 55), 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    width: fit-content;
+    margin: 0 auto 16px auto;
+  }
+
+  .appointment-title:after {
+    content: '';
+    width: 208px;
+    height: 20px;
+    background-color: var(--transparent-green);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .appointment-text-description {
+    color: var(--main-text);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: normal;
+    margin: 0 auto 64px auto;
+    max-width: 586px;
+  }
+
+  .appointment-form {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .appointment-form-input,
+  .appointment-form-textarea {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .appointment-form-text-radiogroup {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .appointment-form-radio-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .appointment-form-radio-text {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .appointment-form-btn {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .appointment-form-text-policy {
+    color: var(--main-text);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .appointment-wrap {
+    display: flex;
+  }
+
+  .appointment-advantages {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 492px;
+    height: 578px;
+    background-color: var(--green);
+    border-radius: 30px;
+    background-image: url('../../img/girl.png');
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .appointment-advantages {
+      background-image: url('../../img/girl@2x.png');
+      background-size: 492px 392px;
+    }
+  }
+
+  .advantages-text-number {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    margin-bottom: 8px;
+  }
+
+  .advantages-text {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+  }
+}
