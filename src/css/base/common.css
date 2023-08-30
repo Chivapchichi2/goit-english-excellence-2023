@@ -4,7 +4,7 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.02em;
+  letter-spacing: normal;
 }
 
 .link {
@@ -51,6 +51,19 @@ body {
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .title {
     font-size: 40px;
@@ -67,5 +80,7 @@ body {
     margin-bottom: 64px;
     margin-right: auto;
     margin-left: auto;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
