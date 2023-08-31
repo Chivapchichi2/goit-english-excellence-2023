@@ -9,9 +9,10 @@
 .logo-link {
   color: var(--black);
   font-size: 20px;
-  line-height: 1.2;
+  line-height: normal;
   font-weight: 700;
 }
+
 .logo-link-color {
   color: var(--green);
 }
@@ -94,7 +95,7 @@
   }
   .page-header-socials-list-items {
     display: flex;
-    padding: 8px;
+    padding: 7px;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(18, 20, 23, 0.1);

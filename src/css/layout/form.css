@@ -13,18 +13,24 @@
   line-height: 1.7;
   letter-spacing: normal;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .appointment-form-label {
   display: block;
   position: relative;
+  margin-bottom: 18px;
+}
+
+.appointment-form-label:last-of-type {
+  margin-bottom: 23px;
 }
 
 .appointment-form-input-icon {
   position: absolute;
-  top: 0;
+  top: 25%;
   right: 18px;
-  transform: scale(0%) translateY(50%);
+  transform: scale(0%);
   fill: #ee323d;
   opacity: 0;
   transition: transform var(--common-transition),
@@ -35,11 +41,10 @@
 .appointment-form-textarea {
   color: var(--black);
   line-height: 1.3;
-  padding: 15px 42px 15px 18px;
+  padding: 14px 42px 16px 17px;
   width: 100%;
   border-radius: 12px;
   border: 1px solid rgba(18, 20, 23, 0.1);
-  margin-bottom: 18px;
   outline-offset: -4px;
   outline-color: transparent;
   transition: border var(--common-transition);
@@ -62,13 +67,13 @@
 .appointment-form-input:not(:placeholder-shown):invalid
   + .appointment-form-input-icon {
   opacity: 1;
-  transform: scale(100%) translateY(50%);
+  transform: scale(100%);
 }
 
 .appointment-form-textarea {
+  display: block;
   height: 92px;
   padding: 15px 17px;
-  margin-bottom: 20px;
   resize: none;
 }
 
@@ -91,7 +96,7 @@
 .appointment-form-radio-label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
 }
 
 .appointment-form-radio-text {
@@ -102,9 +107,10 @@
 
 .appointment-form-radio-custom {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 18px;
   height: 18px;
+  margin: 2px;
   border: 2px solid rgba(18, 20, 23, 0.2);
   border-radius: 50%;
 }
@@ -204,7 +210,6 @@
 
   .appointment-text-description {
     color: var(--main-text);
-    text-align: center;
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: normal;
@@ -217,15 +222,37 @@
     max-width: 500px;
   }
 
+  .appointment-form-label:last-of-type {
+    margin-bottom: 32px;
+  }
+
   .appointment-form-input,
   .appointment-form-textarea {
     font-size: 16px;
     line-height: 1.5;
   }
 
+  .appointment-form-textarea {
+    height: 104px;
+  }
+
+  .appointment-form-input-icon {
+    top: 30%;
+  }
+
   .appointment-form-input:not(:placeholder-shown):invalid
     + .appointment-form-input-icon {
-    transform: scale(100%) translateY(70%);
+    transform: scale(100%);
+  }
+
+  .appointment-form-radio-custom {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+  }
+
+  .appointment-form-radio:checked + .appointment-form-radio-custom::after {
+    transform: translate(30%, 30%);
   }
 
   .appointment-form-text-radiogroup {
@@ -247,6 +274,7 @@
   }
 
   .appointment-form-btn {
+    height: 60px;
     font-size: 18px;
     line-height: 1.6;
   }
@@ -262,6 +290,16 @@
 @media screen and (min-width: 1280px) {
   .appointment-wrap {
     display: flex;
+    gap: 32px;
+  }
+
+  .appointment-text-description {
+    max-width: 704px;
+  }
+
+  .appointment-form {
+    margin: 0;
+    width: 100%;
   }
 
   .appointment-advantages {
