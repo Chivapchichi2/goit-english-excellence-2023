@@ -29,16 +29,20 @@
 .contact-list-item {
   font-style: normal;
   line-height: 1.3;
+  font-size: 14px;
 }
 
 .contact-list-label {
-  opacity: 0.6;
+  letter-spacing: -0.02em;
   margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.60);
+  opacity: 0.9;
 }
 
 .contact-list-link {
   display: block;
   font-weight: 600;
+  letter-spacing: normal;
 }
 
 .footer-nav-list {
@@ -51,6 +55,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3;
+  letter-spacing: normal;
 }
 
 .social-link-list {
@@ -90,12 +95,16 @@
   flex-direction: column;
   gap: 14px;
   padding: 20px 0;
+  font-size: 14px;
+  line-height: 1.3;
   color: rgba(255, 255, 255, 0.6);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-copyright {
   line-height: 1.3;
+  letter-spacing: -0.02em;
+  opacity: 0.9;
 }
 
 .footer-policy-list {
@@ -105,6 +114,7 @@
 
 .footer-policy-list-link {
   color: rgba(255, 255, 255, 0.6);
+  letter-spacing: -0.02em;
   transition: color var(--common-transition);
 }
 
@@ -117,6 +127,7 @@
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
     gap: 0;
     padding: 32px 0 110px;
   }
@@ -160,5 +171,9 @@
 
   .footer-navigation {
     margin-right: 292px;
+  }
+
+  .footer-policy-wrapper {
+    padding: 23px 0;
   }
 }
