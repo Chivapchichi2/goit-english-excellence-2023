@@ -1,0 +1,359 @@
+.package-container {
+  border-radius: 16px;
+  background: var(--green-linear);
+}
+
+.pakcage-benefits-text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .package-container {
+    padding-top: 40px;
+  }
+  .package-books-img {
+    display: none;
+  }
+
+  .package-slogan {
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .package-slogan-accent {
+    color: var(--transparent-green);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .package-benefits-container {
+    background-image: url(../../img/cards-mobile-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 496px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .package-benefits-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .package-benefits-icon {
+    fill: var(--white);
+  }
+
+  .package-benefits-title {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .package-benefits-text {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  .package-benefits-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .package-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  .package-benefits-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .package-benefits-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 58px;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+    transition: background-color var(--common-transition);
+  }
+
+  .package-benefits-link:hover,
+  .package-benefits-link:focus {
+    background-color: var(--dark-green);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi),
+  (max-width: 767px) and (min-resolution: 2dppx),
+  (max-width: 767px) and (min-device-pixel-ratio: 2) {
+  .package-benefits-container {
+    background-image: url(../../img/cards-mobile-2x-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .package-container {
+    padding-top: 64px;
+  }
+
+  .pakcage-benefits-text-content-wrapper {
+    margin-right: 22px;
+  }
+  .package-slogan {
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    padding-left: 32px;
+  }
+
+  .package-slogan-accent {
+    color: var(--transparent-green);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .package-benefits-container {
+    background-image: url(../../img/cards-tablet-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 580px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .package-benefits-list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .package-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .package-benefits-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .package-benefits-icon {
+    fill: var(--white);
+  }
+
+  .package-benefits-title {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+
+  .package-benefits-text {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .package-benefits-link {
+    max-width: 306px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 58px;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: background-color var(--common-transition);
+  }
+
+  .package-benefits-link:hover,
+  .package-benefits-link:focus {
+    background-color: var(--dark-green);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx),
+  (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .package-benefits-container {
+    background-image: url(../../img/cards-tablet-2x-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .package-container {
+    padding-top: 64px;
+    padding-bottom: 69px;
+  }
+
+  .pakcage-benefits-text-content-wrapper {
+    margin-right: 92px;
+  }
+  .package-slogan {
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .package-slogan-accent {
+    color: var(--transparent-green);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .package-benefits-container {
+    background-image: url(../../img/cards-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 566px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .package-benefits-list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .package-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .package-benefits-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+  }
+  .package-benefits-icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--white);
+  }
+
+  .package-benefits-title {
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+
+  .package-benefits-text {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .package-benefits-link {
+    max-width: 306px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 58px;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: background-color var(--common-transition);
+  }
+
+  .package-benefits-link:hover,
+  .package-benefits-link:focus {
+    background-color: var(--dark-green);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-resolution: 2dppx),
+  (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+  .package-benefits-container {
+    background-image: url(../../img/cards-2x-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
