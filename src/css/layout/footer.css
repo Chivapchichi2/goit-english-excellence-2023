@@ -30,6 +30,7 @@
   font-style: normal;
   line-height: 1.3;
   font-size: 14px;
+  position: relative;
 }
 
 .contact-list-label {
@@ -45,6 +46,17 @@
   letter-spacing: normal;
 }
 
+.contact-list-link:hover::after,
+.contact-list-link:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+}
+
 .footer-nav-list {
   display: flex;
   flex-direction: column;
@@ -56,6 +68,21 @@
   font-size: 14px;
   line-height: 1.3;
   letter-spacing: normal;
+}
+
+.footer-nav-list-link {
+  position: relative;
+}
+
+.footer-nav-list-item:hover .footer-nav-list-link::after,
+.footer-nav-list-item:focus .footer-nav-list-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
 }
 
 .social-link-list {
@@ -83,7 +110,7 @@
 
 .social-link-list-link:hover .social-link-list-icon,
 .social-link-list-link:focus .social-link-list-icon {
-  fill: rgba(77, 194, 116, 1);
+  fill: var(--green);
 }
 
 .social-link-list-link:hover {
@@ -120,7 +147,7 @@
 
 .footer-policy-list-link:hover,
 .footer-policy-list-link:focus {
-  color: rgba(77, 194, 116, 1);
+  color: var(--green);
 }
 
 @media screen and (min-width: 768px) {
