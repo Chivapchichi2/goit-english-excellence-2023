@@ -1,7 +1,6 @@
 @media screen and (max-width: 767px) {
   .about-custom-list {
     counter-reset: item;
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -31,7 +30,6 @@
   .about-custom-list-item {
     border-radius: 16px;
     background: var(--gray);
-    width: 335px;
     height: 160px;
     padding: 32px;
   }
@@ -46,16 +44,19 @@
     background-image: url('../../img/about-girl-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 255px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-custom-list {
     counter-reset: item;
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    padding-left: 0;
+    /* padding-left: 0; */
+    padding-inline-start: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-custom-list-item::before {
@@ -84,7 +85,7 @@
   .about-custom-list-item {
     border-radius: 30px;
     background: var(--gray);
-    width: 335px;
+    width: calc((100% - 32px) / 2);
     height: 160px;
     padding: 32px;
   }
@@ -99,6 +100,7 @@
     background-image: url('../../img/about-girl-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 255px;
   }
 
   .custom-list-wrapper {
@@ -108,17 +110,15 @@
 }
 @media screen and (min-width: 1280px) {
   .custom-list-and-png-wrapper {
-    display: flex;
-    gap: 32px;
+    /* display: flex;
+    gap: 32px; */
   }
 
   .about-custom-list {
     counter-reset: item;
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
     gap: 32px;
     padding-left: 0;
     padding-right: 0;
@@ -130,20 +130,16 @@
     color: var(--green);
     font-size: 28px;
     font-weight: 700;
-    line-height: 1.14; /* 114.286% */
+    line-height: 1.1; /* 114.286% */
     letter-spacing: -0.02em;
   }
 
   .about-list-item-desc {
     color: var(--black);
-
     font-weight: 700;
-
     margin-top: 16px;
     margin-right: 10px;
-
     font-size: 20px;
-
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -152,7 +148,7 @@
   .about-custom-list-item {
     border-radius: 30px;
     background: var(--gray);
-    width: 325px;
+    width: calc((100% - 365px) / 2);
     height: 160px;
     padding: 32px;
   }
@@ -161,15 +157,15 @@
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: -9px;
     width: 310px;
     height: 352px;
-
     border-radius: 30px;
     background-color: var(--green);
     background-image: url('../../img/about-desktop-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 255px;
   }
 }
 
