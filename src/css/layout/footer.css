@@ -77,7 +77,7 @@
 }
 
 .footer-nav-list-item:hover .footer-nav-list-link::after,
-.footer-nav-list-item:focus .footer-nav-list-link::after {
+.footer-nav-list-link:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -115,7 +115,8 @@
   fill: var(--green);
 }
 
-.social-link-list-link:hover {
+.social-link-list-link:hover,
+.social-link-list-link:focus {
   border-color: rgba(77, 194, 116, 0.1)
 }
 
