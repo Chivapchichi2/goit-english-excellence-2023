@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: var(--main-text);
   background: var(--white);
@@ -45,6 +48,12 @@ body {
   border-radius: 8px;
   background-color: var(--transparent-green);
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .title-decor::after {
+    bottom: 0;
+    height: 20px;
+  }
 }
 
 .text-center {

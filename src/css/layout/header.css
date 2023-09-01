@@ -4,14 +4,16 @@
   display: flex;
   align-items: center;
   background-color: var(--white);
+  margin-bottom: 8px;
 }
 
 .logo-link {
   color: var(--black);
   font-size: 20px;
-  line-height: 1.2;
+  line-height: normal;
   font-weight: 700;
 }
+
 .logo-link-color {
   color: var(--green);
 }
@@ -30,6 +32,9 @@
   .mobile-menu-btn-icon {
     width: 40px;
     height: 28px;
+  }
+  .header-container {
+    margin-bottom: 32px;
   }
 }
 
@@ -53,6 +58,7 @@
     max-width: 1024px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 16px;
   }
   .burger-btn {
     display: none;
@@ -94,7 +100,7 @@
   }
   .page-header-socials-list-items {
     display: flex;
-    padding: 8px;
+    padding: 7px;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(18, 20, 23, 0.1);

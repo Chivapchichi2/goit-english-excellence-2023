@@ -105,12 +105,17 @@
     width: 384px;
   }
   .close-btn-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .mobile-menu-social-list-icon {
     width: 28px;
     height: 28px;
+  }
+
+  .mobile-menu-social-list-item {
+    width: 44px;
+    height: 44px;
   }
 }
 
