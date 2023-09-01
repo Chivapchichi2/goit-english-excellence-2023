@@ -1,5 +1,5 @@
 .package-container {
-  border-radius: 16px;
+  border-radius: 30px;
   background: var(--green-linear);
 }
 
@@ -11,8 +11,12 @@
 
 @media screen and (max-width: 767px) {
   .package-container {
+    max-width: 335px;
+    margin: 0 auto;
     padding-top: 40px;
+    padding-bottom: 20px;
   }
+
   .package-books-img {
     display: none;
   }
@@ -37,9 +41,9 @@
     background-image: url(../../img/cards-mobile-min.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     min-height: 496px;
-    padding: 0 20px;
+    padding: 0 36px;
     display: flex;
     justify-content: center;
   }
@@ -100,7 +104,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    padding: 14px 58px;
+    padding: 14px 55px;
     color: var(--white);
     background-color: var(--green);
     font-size: 14px;
@@ -122,17 +126,20 @@
     background-image: url(../../img/cards-mobile-2x-min.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
 @media screen and (min-width: 768px) {
   .package-container {
+    max-width: 704px;
+    margin: 0 auto;
     padding-top: 64px;
+    padding-bottom: 30px;
   }
 
   .pakcage-benefits-text-content-wrapper {
-    margin-right: 22px;
+    max-width: 448px;
   }
   .package-slogan {
     color: var(--white);
@@ -158,8 +165,9 @@
     min-height: 580px;
     padding-left: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    position: relative;
   }
 
   .package-benefits-list {
@@ -184,8 +192,8 @@
     align-items: center;
     background-color: var(--green);
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    min-width: 28px;
+    height: 28px;
   }
   .package-benefits-icon {
     fill: var(--white);
@@ -228,6 +236,11 @@
   .package-benefits-link:focus {
     background-color: var(--dark-green);
   }
+  .package-books-img {
+    position: absolute;
+    bottom: 97px;
+    right: -20px;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
@@ -243,19 +256,25 @@
 
 @media screen and (min-width: 1280px) {
   .package-container {
+    margin: 0 auto;
+    max-width: 1152px;
     padding-top: 64px;
     padding-bottom: 69px;
   }
 
   .pakcage-benefits-text-content-wrapper {
+    max-width: 657px;
     margin-right: 92px;
   }
+
   .package-slogan {
+    width: 830px;
     color: var(--white);
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
+    padding-left: 64px;
   }
 
   .package-slogan-accent {
@@ -270,11 +289,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 566px;
-    padding-left: 70px;
+    min-height: 604px;
+    max-width: 1104px;
+    padding-left: 105px;
+    padding-top: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    position: relative;
   }
 
   .package-benefits-list {
@@ -283,14 +306,14 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
   }
 
   .package-benefits-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 16px;
+    column-gap: 20px;
   }
 
   .package-benefits-icon-wrapper {
@@ -314,7 +337,7 @@
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    margin-bottom: 32px;
+    margin-bottom: 42px;
   }
 
   .package-benefits-text {
@@ -339,6 +362,12 @@
     font-weight: 700;
     line-height: 1.5;
     transition: background-color var(--common-transition);
+  }
+
+  .package-books-img {
+    position: absolute;
+    bottom: 124px;
+    right: 43px;
   }
 
   .package-benefits-link:hover,
