@@ -34,6 +34,7 @@
     modal.classList.remove('is-modal-open');
     policy.classList.add('is-none');
     term.classList.add('is-none');
+    body.setAttribute('style', 'overflow: auto');
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
