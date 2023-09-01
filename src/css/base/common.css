@@ -49,12 +49,6 @@ body {
   background-color: var(--transparent-green);
   z-index: -1;
 }
-@media screen and (min-width: 768px) {
-  .title-decor::after {
-    bottom: 0;
-    height: 20px;
-  }
-}
 
 .text-center {
   text-align: center;
@@ -79,6 +73,11 @@ body {
     line-height: 1.2;
   }
 
+  .title-decor::after {
+    bottom: 0;
+    height: 20px;
+  }
+
   body {
     font-size: 16px;
     line-height: 1.5;
@@ -90,6 +89,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.67;
   }
 }
