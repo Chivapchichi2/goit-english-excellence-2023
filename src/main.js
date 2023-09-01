@@ -3,6 +3,7 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const menu = document.querySelector('[data-menu]');
+  const body = document.querySelector('body');
 
   const openPolicyBtn = document.getElementById('policy');
   const openTermsBtn = document.getElementById('terms');
@@ -26,6 +27,7 @@
   const openTerm = () => {
     modal.classList.add('is-modal-open');
     term.classList.remove('is-none');
+    body.setAttribute('style', 'overflow: hidden');
   };
 
   const closeModal = () => {
@@ -39,6 +41,4 @@
   openPolicyBtn.addEventListener('click', openPolicy);
   openTermsBtn.addEventListener('click', openTerm);
   closeModalBtn.addEventListener('click', closeModal);
-
 })();
-
