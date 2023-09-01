@@ -35,6 +35,10 @@
   line-height: calc(40 / 38);
   letter-spacing: 0;
 
+  @media screen and (max-width: 374px) {
+    font-size: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 0;
     display: block;
@@ -81,18 +85,17 @@
 
 .hero-btn {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 72px;
   text-align: center;
   background-color: var(--green);
   color: var(--white);
   border-radius: 12px;
   border: none;
-  padding: 14px 78px;
+  padding: 14px 0;
   font-size: 14px;
   font-weight: 700;
   line-height: calc(24 / 14);
   letter-spacing: 0;
-  margin-bottom: 72px;
 
   @media screen and (min-width: 768px) {
     padding: 16px 64px;
