@@ -1,5 +1,5 @@
 .package-container {
-  border-radius: 30px;
+  border-radius: 16px;
   background: var(--green-linear);
 }
 
@@ -104,7 +104,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    padding: 14px 55px;
+    padding: 14px 0;
     color: var(--white);
     background-color: var(--green);
     font-size: 14px;
@@ -136,6 +136,7 @@
     margin: 0 auto;
     padding-top: 64px;
     padding-bottom: 30px;
+    border-radius: 30px;
   }
 
   .pakcage-benefits-text-content-wrapper {
@@ -146,7 +147,7 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     padding-left: 32px;
   }
 
@@ -161,8 +162,8 @@
     background-image: url(../../img/cards-tablet-min.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    min-height: 580px;
+    background-size: auto;
+    min-height: 607px;
     padding-left: 50px;
     display: flex;
     justify-content: start;
@@ -222,7 +223,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    padding: 14px 58px;
+    padding: 16px 0;
     color: var(--white);
     background-color: var(--green);
     font-size: 18px;
@@ -354,7 +355,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    padding: 14px 58px;
+    padding: 16px 0;
     color: var(--white);
     background-color: var(--green);
     font-size: 18px;
