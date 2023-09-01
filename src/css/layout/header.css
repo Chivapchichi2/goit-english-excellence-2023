@@ -1,10 +1,12 @@
+.header-section {
+  margin-bottom: 8px;
+}
 .header-container {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
   background-color: var(--white);
-  margin-bottom: 8px;
 }
 
 .logo-link {
@@ -33,7 +35,7 @@
     width: 40px;
     height: 28px;
   }
-  .header-container {
+  .header-section {
     margin-bottom: 32px;
   }
 }
@@ -58,8 +60,12 @@
     max-width: 1024px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .header-section {
     margin-bottom: 16px;
   }
+
   .burger-btn {
     display: none;
   }
