@@ -1,5 +1,6 @@
 .feedback-title {
   margin-bottom: 16px;
+  font-weight: 700;
 }
 .feedback-text {
   margin-bottom: 40px;
@@ -65,9 +66,6 @@
 }
 
 @media (min-width: 768px) {
-  .feedback {
-    padding-bottom: 100px;
-  }
   .feedback-text {
     margin-bottom: 64px;
     font-size: 18px;
@@ -91,10 +89,7 @@
     border-radius: 15px;
   }
 }
-@media (min-width: 1152px) {
-  .feedback {
-    padding-bottom: 150px;
-  }
+@media (min-width: 1280px) {
   .feedback-list-item {
     width: calc((100% - 64px) / 3);
   }
