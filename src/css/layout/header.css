@@ -34,10 +34,19 @@
   color: currentColor;
 }
 
+.tablet, .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .mobile-menu-btn-icon {
-    width: 40px;
-    height: 28px;
+  .tablet {
+    display: block;
   }
 
   .header-section {
