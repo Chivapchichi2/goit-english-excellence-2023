@@ -12,7 +12,7 @@
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%
     ),
-    url('../img/hero-mobile-bcg.jpg');
+    url('../../img/hero-mobile-bcg.jpg');
 }
 
 /* ========================================================== */
@@ -23,7 +23,7 @@
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%
       ),
-      url('../img/hero-mobile-bcg@2x.jpg');
+      url('../../img/hero-mobile-bcg@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -33,27 +33,21 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        url('../img/hero-tablet-bcg@2x.jpg');
+        url('../../img/hero-tablet-bcg@2x.jpg');
     }
   }
   @media screen and (min-width: 1158px) {
     .hero-container {
       background-image: linear-gradient(
           96deg,
-          rgba(0, 0, 0, 0.4) 0%,
-          rgba(0, 0, 0, 0) 100%
+          rgba(0, 0, 0, 0.4) 36.36%,
+          rgba(0, 0, 0, 0) 51.43%
         ),
-        url('../img/hero-desktop-bckgrd@2x.jpg');
+        url('../../img/hero-desktop-bckgrd@2x.jpg');
     }
   }
 }
 /* ================================================================ */
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .hero-container {
-    width: 100%;
-  }
-}
 
 .hero-title {
   margin-bottom: 40px;
@@ -119,28 +113,12 @@
 .down-anchor:focus .down-anchor-icon {
   fill: var(--white);
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .hero-container {
-    max-width: 768px;
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
-      url('../img/hero-tablet-bcg.jpg');
+    width: 100%;
   }
-}
-
-@media screen and (min-width: 1280px) {
-  .hero-container {
-    max-width: 1152px;
-    background-image: linear-gradient(
-        114deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
-      url('../img/hero-desktop-bckgrd.jpg');
+  .hero-title {
+    font-size: 30px;
   }
 }
 
@@ -148,6 +126,13 @@
   .hero-container {
     border-radius: 30px;
     padding: 260px 184px 295px 32px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../img/hero-tablet-bcg.jpg');
   }
 
   .hero-title {
@@ -179,5 +164,12 @@
   }
   .hero-container {
     padding: 164px 524px 163px 64px;
+    max-width: 1152px;
+    background-image: linear-gradient(
+        96deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      url('../../img/hero-desktop-bckgrd.jpg');
   }
 }
