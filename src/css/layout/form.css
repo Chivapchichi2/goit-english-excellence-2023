@@ -172,6 +172,23 @@
   background-color: var(--dark-green);
 }
 
+.appointment-form-policy-btn {
+  display: inline;
+  font-family: inherit;
+  color: currentColor;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--common-transition);
+}
+
+.appointment-form-policy-btn:hover,
+.appointment-form-policy-btn:focus {
+  color: var(--green);
+}
+
 .appointment-form-text-policy {
   color: var(--main-text);
   font-size: 12px;
