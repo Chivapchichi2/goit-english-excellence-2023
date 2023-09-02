@@ -5,7 +5,8 @@
   const menu = document.querySelector('[data-menu]');
   const body = document.querySelector('body');
 
-  const openPolicyBtn = document.getElementById('policy');
+  const openPolicyFooterBtn = document.getElementById('policy-footer-btn');
+  const openPolicyFormBtn = document.getElementById('policy-form-btn');
   const openTermsBtn = document.getElementById('terms');
   const closeModalBtn = document.getElementById('close-modal');
   const modal = document.getElementById('modal');
@@ -39,7 +40,8 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-  openPolicyBtn.addEventListener('click', openPolicy);
+  openPolicyFooterBtn.addEventListener('click', openPolicy);
+  openPolicyFormBtn.addEventListener('click', openPolicy);
   openTermsBtn.addEventListener('click', openTerm);
   closeModalBtn.addEventListener('click', closeModal);
 })();

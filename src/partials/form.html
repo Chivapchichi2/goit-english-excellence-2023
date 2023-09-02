@@ -57,7 +57,6 @@
         <label class="appointment-form-label">
           <textarea
             class="appointment-form-textarea"
-            type="text"
             placeholder="Comment"
           ></textarea>
         </label>
@@ -114,9 +113,19 @@
             </label>
           </li>
         </ul>
-        <button class="appointment-form-btn" type="submit">Send</button>
+        <button class="appointment-form-btn" type="submit" aria-label="submit">
+          Send
+        </button>
         <p class="appointment-form-text-policy">
-          By clicking on “Send” button, you agree to our Privacy Policy,<br />
+          By clicking on “Send” button, you agree to our
+          <button
+            class="appointment-form-policy-btn"
+            id="policy-form-btn"
+            aria-label="policy"
+            type="button"
+          >
+            Privacy Policy</button
+          >,<br />
           and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
