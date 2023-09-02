@@ -18,39 +18,39 @@
         <label class="appointment-form-label">
           <input
             class="appointment-form-input"
-            minlength="2"
-            name="customer-name"
-            pattern="[A-Z a-z]+"
-            placeholder="Name"
             required
             type="text"
+            placeholder="Name"
+            name="customer-name"
+            minlength="2"
+            pattern="[A-Z a-z]+"
           />
-          <svg class="appointment-form-input-icon" height="24" width="24">
+          <svg class="appointment-form-input-icon" width="24" height="24">
             <use href="./img/sprite.svg#icon-error-mark"></use>
           </svg>
         </label>
         <label class="appointment-form-label">
           <input
             class="appointment-form-input"
-            name="customer-email"
-            placeholder="Email"
             required
             type="email"
+            placeholder="Email"
+            name="customer-email"
           />
-          <svg class="appointment-form-input-icon" height="24" width="24">
+          <svg class="appointment-form-input-icon" width="24" height="24">
             <use href="./img/sprite.svg#icon-error-mark"></use>
           </svg>
         </label>
         <label class="appointment-form-label">
           <input
             class="appointment-form-input"
-            name="customer-phone"
-            pattern="[0-9+]+"
-            placeholder="Phone"
             required
             type="tel"
+            placeholder="Phone"
+            name="customer-phone"
+            pattern="[0-9+]+"
           />
-          <svg class="appointment-form-input-icon" height="24" width="24">
+          <svg class="appointment-form-input-icon" width="24" height="24">
             <use href="./img/sprite.svg#icon-error-mark"></use>
           </svg>
         </label>
@@ -58,7 +58,6 @@
           <textarea
             class="appointment-form-textarea"
             placeholder="Comment"
-            type="text"
           ></textarea>
         </label>
         <p class="appointment-form-text-radiogroup">Choose a teacher</p>
@@ -67,10 +66,10 @@
           <li>
             <label class="appointment-form-radio-label">
               <input
-                checked
                 class="appointment-form-radio"
-                name="teacher"
+                checked
                 type="radio"
+                name="teacher"
                 value="Maria"
               />
               <span class="appointment-form-radio-custom"></span>
@@ -81,8 +80,8 @@
             <label class="appointment-form-radio-label">
               <input
                 class="appointment-form-radio"
-                name="teacher"
                 type="radio"
+                name="teacher"
                 value="Artem"
               />
               <span class="appointment-form-radio-custom"></span>
@@ -93,8 +92,8 @@
             <label class="appointment-form-radio-label">
               <input
                 class="appointment-form-radio"
-                name="teacher"
                 type="radio"
+                name="teacher"
                 value="Ilona"
               />
               <span class="appointment-form-radio-custom"></span>
@@ -105,8 +104,8 @@
             <label class="appointment-form-radio-label">
               <input
                 class="appointment-form-radio"
-                name="teacher"
                 type="radio"
+                name="teacher"
                 value="Volodymyr"
               />
               <span class="appointment-form-radio-custom"></span>
@@ -114,11 +113,21 @@
             </label>
           </li>
         </ul>
-        <button aria-label="submit" class="appointment-form-btn" type="submit">
+        <button class="appointment-form-btn" type="submit" aria-label="submit">
           Send
         </button>
         <p class="appointment-form-text-policy">
-          By clicking on “Send” button, you agree to our Privacy Policy,<br />
+          By clicking on “Send” button, you agree to our
+          <button
+            class="appointment-form-policy-btn"
+            id="policy-form-btn"
+            aria-label="policy"
+            type="button"
+          >
+            Privacy Policy
+          </button
+          >
+          ,<br />
           and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
