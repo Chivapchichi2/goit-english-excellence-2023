@@ -30,11 +30,11 @@
   position: absolute;
   top: 25%;
   right: 18px;
-  transform: scale(0%);
+  transform: scale(0);
   fill: #ee323d;
   opacity: 0;
   transition: transform var(--common-transition),
-    opacity var(--common-transition);
+  opacity var(--common-transition);
 }
 
 .appointment-form-input,
@@ -65,7 +65,7 @@
 }
 
 .appointment-form-input:not(:placeholder-shown):invalid
-  + .appointment-form-input-icon {
++ .appointment-form-input-icon {
   opacity: 1;
   transform: scale(100%);
 }
@@ -241,7 +241,7 @@
   }
 
   .appointment-form-input:not(:placeholder-shown):invalid
-    + .appointment-form-input-icon {
+  + .appointment-form-input-icon {
     transform: scale(100%);
   }
 
@@ -315,9 +315,7 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
+  @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
     .appointment-advantages {
       background-image: url('../../img/girl@2x.png');
       background-size: 492px 392px;
