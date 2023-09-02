@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const anchorContainer = document.querySelector('#anchor-links');
   const menu = document.querySelector('[data-menu]');
   const body = document.querySelector('body');
 
@@ -44,4 +45,9 @@
   openPolicyFormBtn.addEventListener('click', openPolicy);
   openTermsBtn.addEventListener('click', openTerm);
   closeModalBtn.addEventListener('click', closeModal);
+  anchorContainer.addEventListener('click', e => {
+    if (e.target && e.target.nodeName == 'A') {
+      toggleMenu();
+    }
+  });
 })();
