@@ -69,8 +69,7 @@
   position: relative;
 }
 
-.footer-nav-list-item:hover .footer-nav-list-link::after,
-.footer-nav-list-link:focus::after {
+.footer-nav-list-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -78,6 +77,14 @@
   width: 37px;
   height: 2px;
   background-color: var(--green);
+  opacity: 0;
+  transition: opacity var(--common-transition);
+
+}
+
+.footer-nav-list-item:hover .footer-nav-list-link::after,
+.footer-nav-list-link:focus::after {
+  opacity: 1;
 }
 
 .social-link-list {
@@ -136,6 +143,7 @@
 
 .footer-policy-btn {
   background: transparent;
+  padding: 0;
   border: none;
   outline: none;
   color: rgba(255, 255, 255, 0.6);
